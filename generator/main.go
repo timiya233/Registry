@@ -129,7 +129,7 @@ func generateIndex(output string, entryMap map[string]*entryutils.Entry) error {
 	var err error
 
 	// Create output directory.
-	err = os.MkdirAll(filepath.Dir(output), 0644)
+	err = os.MkdirAll(filepath.Dir(output), 0755)
 	if err != nil {
 		return errors.New("failed to create output directory: " + err.Error())
 	}
