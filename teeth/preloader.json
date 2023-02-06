@@ -1,0 +1,11 @@
+{
+    "format_version": 1,
+    "tooth": "github.com/Tooth-Hub/PreLoader",
+    "information": {
+        "name": "PreLoader for LiteLoaderBDS",
+        "description": "Library preloader for LiteLoaderBDS",
+        "author": "LiteLDev",
+        "license": "LGPL-3.0",
+        "homepage": "https://github.com/LiteLDev/PreLoader"
+    }
+}
