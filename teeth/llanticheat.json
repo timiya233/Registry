@@ -1,0 +1,11 @@
+{
+    "format_version": 1,
+    "tooth": "github.com/Tooth-Hub/LLAntiCheat",
+    "information": {
+        "name": "LLAntiCheat",
+        "description": "Free AntiCheat plugin for LiteLoaderBDS 2",
+        "author": "LiteLDev",
+        "license": "",
+        "homepage": ""
+    }
+}
