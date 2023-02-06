@@ -1,0 +1,67 @@
+name: Generate Index
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build_generator:
+    name: Build generator
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version-file: generator/go.mod
+          cache: true
+          cache-dependency-path: generator/go.mod
+
+      - name: Set up workspace
+        run: |
+          go work init generator
+
+      - name: Build executable
+        run: |
+          go build -o build/generator github.com/liteldev/registry
+
+      - name: Upload build
+        uses: actions/upload-artifact@v3
+        with:
+          name: generator
+          path: build/generator
+
+  generate_index:
+    name: Generate index
+    needs: build_generator
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Download build
+        uses: actions/download-artifact@v3
+        with:
+          name: generator
+
+      - name: Generate index
+        run: |
+          ./generator --input teeth --output docs/index.json
+
+      - name: Upload index as pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs/
+
+  deploy_pages:
+    name: Deploy pages
+    needs: generate_index
+    permissions:
+      id-token: write
+      pages: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy pages
+        uses: actions/deploy-pages@v1
