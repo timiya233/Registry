@@ -45,10 +45,11 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: generator
+          path: build
 
       - name: Generate index
         run: |
-          ./generator --input teeth --output docs/index.json
+          ./build/generator --input teeth --output docs/index.json
 
       - name: Upload index as pages artifact
         uses: actions/upload-pages-artifact@v1
