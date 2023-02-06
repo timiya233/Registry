@@ -49,6 +49,7 @@ jobs:
 
       - name: Generate index
         run: |
+          chmod +x build/generator
           ./build/generator --input teeth --output docs/index.json
 
       - name: Upload index as pages artifact
