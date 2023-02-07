@@ -2,15 +2,15 @@ import json
 import os
 
 # Read docs/index.json
-with open('docs/index.json') as f:
+with open('docs/index.json', encoding='utf-8') as f:
     index = json.load(f)
 
 # Generate items
-with open('docs/_sidebar.md', 'a') as f_sidebar:
+with open('docs/_sidebar.md', 'a', encoding='utf-8') as f_sidebar:
     for item in index['index']:
         # Only process 
         f_sidebar.write(f'- [{item}](/{item}.md)\n')
-        with open(f'docs/{item}.md', 'w') as f:
+        with open(f'docs/{item}.md', 'w', encoding='utf-8') as f:
             repo_user = index['index'][item]['repository'].split('/')[1]
             repo_name = index['index'][item]['repository'].split('/')[2]
             tooth_user = index['index'][item]['tooth'].split('/')[1]
@@ -47,6 +47,6 @@ with open('docs/_sidebar.md', 'a') as f_sidebar:
             f.write(f"---\n\n")
             
             if os.path.exists(f'readmes/{item}.md'):
-                with open(f'readmes/{item}.md') as f_readme:
+                with open(f'readmes/{item}.md', encoding='utf-8') as f_readme:
                     readme = f_readme.read()
                     f.write(f"{readme}\n")
