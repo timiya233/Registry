@@ -5,8 +5,8 @@ on:
   pull_request:
 
 jobs:
-  generate_index:
-    name: Generate index
+  generate:
+    name: Generate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -21,6 +21,14 @@ jobs:
       - name: Generate index
         run: |
           ./reggen --input teeth --output docs/index.json
+
+      - name: Copy assets
+        run: |
+          cp -r assets/* docs/
+
+      - name: Generate website
+        run: |
+          python scripts/generate_website.py
 
       - name: Upload index as pages artifact
         uses: actions/upload-pages-artifact@v1

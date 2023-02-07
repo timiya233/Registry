@@ -1,6 +1,6 @@
 # Official Lip Registry
 
-This is the repository for the official Lip Registry (<https://registry.litebds.com>). It contains the index of common Lip packages, e.g. `liteloaderbds`, `llanticheat`, `lip`, etc.
+This is the official Lip Registry (<https://registry.litebds.com>). It contains the index of common Lip packages, e.g. `liteloaderbds`, `llanticheat`, `lip`, etc.
 
 For Lip users, you do not need to do any configuration. Just run `lip install <alias>` and Lip will automatically fetch the package from the official registry. For example, `lip install lip` will install the latest version of Lip.
 
