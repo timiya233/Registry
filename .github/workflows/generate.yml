@@ -1,0 +1,39 @@
+name: Generate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  generate_index:
+    name: Generate index
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Download reggen
+        run: |
+          curl -L https://github.com/LiteLDev/RegistryGenerator/releases/download/v0.1.0/reggen \
+            -o build/reggen
+          chmod +x build/reggen
+
+      - name: Generate index
+        run: |
+          ./build/reggen --input teeth --output docs/index.json
+
+      - name: Upload index as pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs/
+
+  deploy_pages:
+    name: Deploy pages
+    needs: generate_index
+    permissions:
+      id-token: write
+      pages: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy pages
+        uses: actions/deploy-pages@v1
