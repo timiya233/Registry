@@ -20,7 +20,7 @@ with open('docs/_sidebar.md', 'a') as f_sidebar:
 
             f.write(f"## Metadata\n")
             f.write(f"- Author: {index['index'][item]['author']}\n")
-            f.write(f"- Homepage: <{index['index'][item]['homepage']}>\n")
+            f.write(f"- Homepage: {index['index'][item]['homepage']}\n")
             f.write(f"- License: {index['index'][item]['license']}\n")
             f.write(f"- Tooth Path: {index['index'][item]['tooth']}\n")
             f.write(f"\n")
