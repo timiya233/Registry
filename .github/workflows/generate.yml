@@ -37,7 +37,7 @@ jobs:
 
   deploy_pages:
     name: Deploy pages
-    needs: generate_index
+    needs: generate
     permissions:
       id-token: write
       pages: write
