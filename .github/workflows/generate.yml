@@ -37,6 +37,7 @@ jobs:
 
   deploy_pages:
     name: Deploy pages
+    if: github.event_name == 'push'
     needs: generate
     permissions:
       id-token: write
