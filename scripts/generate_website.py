@@ -26,7 +26,8 @@ with open('docs/_sidebar.md', 'a', encoding='utf-8') as f_sidebar:
                 license_name = index['index'][item]['license'].replace('-', '--').replace('+', '%2B')
                 f.write(f"![License](https://img.shields.io/badge/license-{license_name}-orange?style=for-the-badge)")
             else:
-                f.write(f"![Copyright](https://img.shields.io/badge/copyright-{index['index'][item]['author']}-orange?style=for-the-badge)")
+                author_name = index['index'][item]['author'].replace('-', '--').replace('+', '%2B')
+                f.write(f"![Copyright](https://img.shields.io/badge/copyright-{author_name}-orange?style=for-the-badge)")
 
 
 
