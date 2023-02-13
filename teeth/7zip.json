@@ -6,7 +6,7 @@
         "description": "A Lip tool adaptation of 7-Zip",
         "author": "Futrime",
         "license": "LGPL-2.1-or-later",
-        "homepage": "https://www.7-zip.org/",
+        "homepage": "https://github.com/Tooth-Hub/7zip",
         "repository": "github.com/Tooth-Hub/7zip"
     }
 }
