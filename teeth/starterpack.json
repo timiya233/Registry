@@ -1,0 +1,11 @@
+{
+    "format_version": 1,
+    "tooth": "github.com/Tooth-Hub/StarterPack",
+    "information": {
+        "name": "Starter Pack",
+        "description": "An integration pack for starters",
+        "author": "Futrime",
+        "license": "",
+        "homepage": "https://github.com/Tooth-Hub/StarterPack"
+    }
+}
