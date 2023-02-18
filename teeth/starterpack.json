@@ -6,6 +6,7 @@
         "description": "An integration pack for starters",
         "author": "Futrime",
         "license": "",
-        "homepage": "https://github.com/Tooth-Hub/StarterPack"
+        "homepage": "https://github.com/Tooth-Hub/StarterPack",
+        "repository": "github.com/Tooth-Hub/StarterPack"
     }
 }
