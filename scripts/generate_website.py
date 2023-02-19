@@ -47,6 +47,46 @@ with open('docs/_sidebar.md', 'a', encoding='utf-8') as f_sidebar:
 
             f.write(f"{item['description']}\n\n")
 
+            for tag in item['tags']:
+                tag_type_dict = {
+                    "reserved": [
+                        "featured"
+                    ],
+                    "type": [
+                        "utility",
+                        "plugin",
+                        "module",
+                        "mod",
+                        "modpack",
+                        "addon",
+                        "world",
+                        "integration"
+                    ],
+                    "ecosystem": [
+                        "ll",
+                        "llse",
+                        "llnet",
+                        "bdsx",
+                        "pnx",
+                        "bds"
+                    ]
+                }
+
+                color = "inactive"
+
+                if tag in tag_type_dict['reserved']:
+                    color = "important"
+                elif tag in tag_type_dict['type']:
+                    color = "blue"
+                elif tag in tag_type_dict['ecosystem']:
+                    color = "blueviolet"
+
+                tag = tag.replace('-', '--')
+                f.write(f"![{tag}](https://img.shields.io/badge/-{tag}-{color}?style=flat)")
+                f.write("&nbsp;")
+
+            f.write(f"\n\n")
+
             f.write(f"> Author:&emsp;[{item['author']}](https://github.com/{item['author']})\n")
 
             if item['homepage'] != '':
@@ -55,7 +95,9 @@ with open('docs/_sidebar.md', 'a', encoding='utf-8') as f_sidebar:
 
             if item['repository'] != '':
                 f.write(f">\n")
-                f.write(f"> Repository:&emsp;[{item['repository']}](https://{item['repository']})\n\n")
+                f.write(f"> Repository:&emsp;[{item['repository']}](https://{item['repository']})\n")
+
+            f.write(f"\n")
 
             f.write(f"---\n\n")
             
