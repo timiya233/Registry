@@ -7,47 +7,59 @@ with open('docs/index.json', encoding='utf-8') as f:
 
 # Generate items
 with open('docs/_sidebar.md', 'a', encoding='utf-8') as f_sidebar:
-    for item in index['index']:
-        # Only process 
-        f_sidebar.write(f'- [{item}](/{item}.md)\n')
-        with open(f'docs/{item}.md', 'w', encoding='utf-8') as f:
-            repo_user = index['index'][item]['repository'].split('/')[1]
-            repo_name = index['index'][item]['repository'].split('/')[2]
-            tooth_user = index['index'][item]['tooth'].split('/')[1]
-            tooth_name = index['index'][item]['tooth'].split('/')[2]
+    for alias in index['index']:
 
-            f.write(f"# {index['index'][item]['name']}\n\n")
+        # Add to sidebar
+        f_sidebar.write(f'- [{alias}](/{alias}.md)\n')
+
+        # Generate docs
+        with open(f'docs/{alias}.md', 'w', encoding='utf-8') as f:
+            item = index['index'][alias]
+
+            f.write(f"# {item['name']}\n\n")
+
+            tooth_user = item['tooth'].split('/')[1]
+            tooth_name = item['tooth'].split('/')[2]
 
             f.write(f"![GitHub tag (latest SemVer)](https://img.shields.io/github/v/release/{tooth_user}/{tooth_name}?label=VERSION&style=for-the-badge)")
             f.write("&emsp;")
+
             f.write(f"![GitHub Release Date](https://img.shields.io/github/release-date/{tooth_user}/{tooth_name}?label=PUBLISHED&style=for-the-badge)")
             f.write("&emsp;")
-            if index['index'][item]['license'] != '':
-                license_name = index['index'][item]['license'].replace('-', '--').replace('+', '%2B')
-                f.write(f"![License](https://img.shields.io/badge/license-{license_name}-orange?style=for-the-badge)")
-            else:
-                author_name = index['index'][item]['author'].replace('-', '--').replace('+', '%2B')
-                f.write(f"![Copyright](https://img.shields.io/badge/copyright-{author_name}-orange?style=for-the-badge)")
 
+            if item['license'] != '':
+                license_name = item['license'].replace('-', '--').replace('+', '%2B')
+                f.write(f"![License](https://img.shields.io/badge/license-{license_name}-orange?style=for-the-badge)")
+            elif item['repository'] != '':
+                repo_user = item['repository'].split('/')[1]
+                repo_name = item['repository'].split('/')[2]
+                f.write(f"![License](https://img.shields.io/github/license/{repo_user}/{repo_name}?color=orange&style=for-the-badge)")
+            else:
+                author_name = item['author'].replace('-', '--').replace('+', '%2B')
+                f.write(f"![Copyright](https://img.shields.io/badge/copyright-{author_name}-orange?style=for-the-badge)")
 
 
             f.write(f"\n\n")
 
             f.write(f"```shell\n")
-            f.write(f"lip install {item}\n")
+            f.write(f"lip install {alias}\n")
             f.write(f"```\n\n")
 
-            f.write(f"{index['index'][item]['description']}\n\n")
+            f.write(f"{item['description']}\n\n")
 
-            f.write(f"> Author:&emsp;[{index['index'][item]['author']}](https://github.com/{index['index'][item]['author']})\n")
-            f.write(f">\n")
-            f.write(f"> Homepage:&emsp;[{index['index'][item]['homepage']}]({index['index'][item]['homepage']})\n")
-            f.write(f">\n")
-            f.write(f"> Repository:&emsp;[{index['index'][item]['repository']}](https://{index['index'][item]['repository']})\n\n")
+            f.write(f"> Author:&emsp;[{item['author']}](https://github.com/{item['author']})\n")
+
+            if item['homepage'] != '':
+                f.write(f">\n")
+                f.write(f"> Homepage:&emsp;[{item['homepage']}]({item['homepage']})\n")
+
+            if item['repository'] != '':
+                f.write(f">\n")
+                f.write(f"> Repository:&emsp;[{item['repository']}](https://{item['repository']})\n\n")
 
             f.write(f"---\n\n")
             
-            if os.path.exists(f'readmes/{item}.md'):
-                with open(f'readmes/{item}.md', encoding='utf-8') as f_readme:
+            if os.path.exists(f'readmes/{alias}.md'):
+                with open(f'readmes/{alias}.md', encoding='utf-8') as f_readme:
                     readme = f_readme.read()
                     f.write(f"{readme}\n")
