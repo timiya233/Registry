@@ -5,6 +5,11 @@
         "name": "Starter Pack",
         "description": "An integration pack for starters",
         "author": "Futrime",
-        "license": ""
+        "license": "",
+        "tags": [
+            "featured",
+            "integration",
+            "ll"
+        ]
     }
 }

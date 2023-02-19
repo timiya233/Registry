@@ -5,6 +5,9 @@
         "name": "7-Zip",
         "description": "A Lip tool adaptation of 7-Zip",
         "author": "Tooth-Hub",
-        "license": "LGPL-2.1"
+        "license": "LGPL-2.1",
+        "tags": [
+            "utility"
+        ]
     }
 }

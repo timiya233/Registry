@@ -6,6 +6,11 @@
         "description": "Free AntiCheat plugin for LiteLoaderBDS 2",
         "author": "LiteLDev",
         "license": "",
-        "repository": "github.com/Tooth-Hub/LLAntiCheat"
+        "repository": "github.com/Tooth-Hub/LLAntiCheat",
+        "tags": [
+            "plugin",
+            "ll",
+            "anti-cheat"
+        ]
     }
 }

@@ -5,6 +5,10 @@
         "name": "BDS Donwloader",
         "description": "A CLI tool to download BDS",
         "author": "Jasonzyt",
-        "repository": "github.com/Jasonzyt/BDSDownloader"
+        "repository": "github.com/Jasonzyt/BDSDownloader",
+        "tags": [
+            "utility",
+            "bds"
+        ]
     }
 }

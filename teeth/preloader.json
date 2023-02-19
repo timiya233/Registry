@@ -5,6 +5,10 @@
         "name": "PreLoader for LiteLoaderBDS",
         "description": "Library preloader for LiteLoaderBDS",
         "author": "LiteLDev",
-        "repository": "github.com/LiteLDev/PreLoader"
+        "repository": "github.com/LiteLDev/PreLoader",
+        "tags": [
+            "module",
+            "ll"
+        ]
     }
 }

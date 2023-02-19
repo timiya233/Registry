@@ -5,6 +5,10 @@
         "name": "Minecraft Level Exporter",
         "description": "Export and convert Minecraft level to NovelCraft level.",
         "author": "Futrime",
-        "repository": "github.com/NovelCraft/MinecraftLevelExporter"
+        "repository": "github.com/NovelCraft/MinecraftLevelExporter",
+        "tags": [
+            "plugin",
+            "llse"
+        ]
     }
 }

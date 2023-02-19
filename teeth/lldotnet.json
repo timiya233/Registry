@@ -6,6 +6,10 @@
         "description": "LiteLoader bindings for .NET",
         "author": "LiteLDev",
         "license": "LGPL-3.0",
-        "repository": "github.com/LiteLDev/LiteLoader.NET"
+        "repository": "github.com/LiteLDev/LiteLoader.NET",
+        "tags": [
+            "module",
+            "llnet"
+        ]
     }
 }

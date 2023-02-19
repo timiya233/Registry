@@ -5,6 +5,9 @@
         "name": "Lip",
         "description": "A package installer, not only for LiteLoaderBDS",
         "author": "LiteLDev",
-        "repository": "github.com/LiteLDev/Lip"
+        "repository": "github.com/LiteLDev/Lip",
+        "tags": [
+            "utility"
+        ]
     }
 }

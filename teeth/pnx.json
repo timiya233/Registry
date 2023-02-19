@@ -5,6 +5,10 @@
         "name": "PowerNukkitX",
         "description": "Make Nukkit Great Again!",
         "author": "PowerNukkitX",
-        "repository": "github.com/PowerNukkitX/PowerNukkitX"
+        "repository": "github.com/PowerNukkitX/PowerNukkitX",
+        "tags": [
+            "module",
+            "pnx"
+        ]
     }
 }

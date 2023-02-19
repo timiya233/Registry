@@ -5,6 +5,10 @@
         "name": "bdsx",
         "description": "Minecraft, Bedrock Dedicated Server mod with node.js ",
         "author": "bdsx",
-        "repository": "github.com/bdsx/bdsx"
+        "repository": "github.com/bdsx/bdsx",
+        "tags": [
+            "module",
+            "bdsx"
+        ]
     }
 }

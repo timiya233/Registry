@@ -5,6 +5,10 @@
         "name": "LLMoney",
         "description": "EconomyCore for LiteLoaderBDS",
         "author": "LiteLDev",
-        "repository": "github.com/LiteLDev/LLMoney"
+        "repository": "github.com/LiteLDev/LLMoney",
+        "tags": [
+            "plugin",
+            "ll"
+        ]
     }
 }

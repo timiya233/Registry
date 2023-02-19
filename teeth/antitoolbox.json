@@ -5,6 +5,11 @@
         "name": "AntiToolbox",
         "description": "Block toolbox players",
         "author": "ShrBox",
-        "repository": "github.com/ShrBox/AntiToolbox"
+        "repository": "github.com/ShrBox/AntiToolbox",
+        "tags": [
+            "plugin",
+            "ll",
+            "anti-cheat"
+        ]
     }
 }
