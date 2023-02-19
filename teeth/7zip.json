@@ -2,11 +2,9 @@
     "format_version": 1,
     "tooth": "github.com/Tooth-Hub/7zip",
     "information": {
-        "name": "7-Zip Lip Tool",
+        "name": "7-Zip",
         "description": "A Lip tool adaptation of 7-Zip",
-        "author": "Futrime",
-        "license": "LGPL-2.1-or-later",
-        "homepage": "https://github.com/Tooth-Hub/7zip",
-        "repository": "github.com/Tooth-Hub/7zip"
+        "author": "Tooth-Hub",
+        "license": "LGPL-2.1"
     }
 }

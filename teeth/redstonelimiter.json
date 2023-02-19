@@ -5,8 +5,6 @@
         "name": "RedstoneLimiter",
         "description": "Limit redstone frequency on LiteLoaderBDS server",
         "author": "ShrBox",
-        "license": "MIT",
-        "homepage": "https://github.com/ShrBox/RedstoneLimiter",
         "repository": "github.com/ShrBox/RedstoneLimiter"
     }
 }

@@ -4,9 +4,8 @@
     "information": {
         "author": "LiteLScript-Dev",
         "description": "TypeScript.d.ts file with auto-completion and code hints for LiteLScript developers",
-        "homepage": "https://github.com/LiteLScript-Dev/HelperLib/",
-        "license": "",
         "name": "HelperLib",
+        "license": "",
         "repository": "github.com/LiteLScript-Dev/HelperLib"
     }
 }

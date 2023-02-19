@@ -5,8 +5,6 @@
         "name": "PowerNukkitX",
         "description": "Make Nukkit Great Again!",
         "author": "PowerNukkitX",
-        "license": "GPL-3.0",
-        "homepage": "https://github.com/PowerNukkitX/PowerNukkitX",
         "repository": "github.com/PowerNukkitX/PowerNukkitX"
     }
 }

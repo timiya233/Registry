@@ -5,8 +5,6 @@
         "name": "PreLoader for LiteLoaderBDS",
         "description": "Library preloader for LiteLoaderBDS",
         "author": "LiteLDev",
-        "license": "LGPL-3.0-only",
-        "homepage": "https://github.com/LiteLDev/PreLoader",
         "repository": "github.com/LiteLDev/PreLoader"
     }
 }

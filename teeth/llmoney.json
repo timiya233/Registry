@@ -5,8 +5,6 @@
         "name": "LLMoney",
         "description": "EconomyCore for LiteLoaderBDS",
         "author": "LiteLDev",
-        "license": "GPL-3.0-only",
-        "homepage": "https://github.com/LiteLDev/LLMoney",
         "repository": "github.com/LiteLDev/LLMoney"
     }
 }
