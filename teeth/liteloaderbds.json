@@ -1,0 +1,15 @@
+{
+    "format_version": 1,
+    "tooth": "github.com/Tooth-Hub/LiteLoaderBDS",
+    "information": {
+        "name": "LiteLoaderBDS",
+        "description": "An epoch-making cross-language plugin loader for Minecraft Bedrock Dedicated Server (BDS). ",
+        "author": "LiteLDev",
+        "homepage": "https://docs.litebds.com",
+        "repository": "github.com/LiteLDev/LiteLoaderBDS",
+        "tags": [
+            "module",
+            "ll"
+        ]
+    }
+}
