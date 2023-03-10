@@ -10,7 +10,7 @@ with open('docs/_sidebar.md', 'a', encoding='utf-8') as f_sidebar:
     for alias in index['index']:
 
         # Add to sidebar
-        f_sidebar.write(f'- [{alias}](/{alias}.md)\n')
+        f_sidebar.write(f'- [{index['index'][alias]['name']}](/{alias}.md)\n')
 
         # Generate docs
         with open(f'docs/{alias}.md', 'w', encoding='utf-8') as f:
