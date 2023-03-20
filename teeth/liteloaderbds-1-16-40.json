@@ -1,0 +1,16 @@
+{
+    "format_version": 1,
+    "tooth": "github.com/Tooth-Hub/LiteLoaderBDS-Legacy",
+    "information": {
+        "name": "LiteLoaderBDS-1.16.40",
+        "description": "LiteLoaderBDS for BDS1.16.40",
+        "author": "LiteLDev",
+        "homepage": "https://docs.litebds.com",
+        "repository": "github.com/Tooth-Hub/LiteLoaderBDS-Legacy",
+        "tags": [
+            "module",
+            "ll",
+            "bds1-16-40"
+        ]
+    }
+}
