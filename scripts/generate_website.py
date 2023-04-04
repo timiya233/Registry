@@ -7,14 +7,16 @@ with open('docs/index.json', encoding='utf-8') as f:
 
 # Generate items
 with open('docs/_sidebar.md', 'a', encoding='utf-8') as f_sidebar:
-    for alias in index['index']:
+    for entry in index['index']:
+        if 'type' in index['index'][entry] and index['index'][entry]['type'] != 'tooth':
+            continue
 
         # Add to sidebar
-        f_sidebar.write(f"- [{index['index'][alias]['name']}](/{alias}.md)\n")
+        f_sidebar.write(f"- [{index['index'][entry]['name']}](/{entry}.md)\n")
 
         # Generate docs
-        with open(f'docs/{alias}.md', 'w', encoding='utf-8') as f:
-            item = index['index'][alias]
+        with open(f'docs/{entry}.md', 'w', encoding='utf-8') as f:
+            item = index['index'][entry]
 
             f.write(f"# {item['name']}\n\n")
 
@@ -42,7 +44,7 @@ with open('docs/_sidebar.md', 'a', encoding='utf-8') as f_sidebar:
             f.write(f"\n\n")
 
             f.write(f"```shell\n")
-            f.write(f"lip install {alias}\n")
+            f.write(f"lip install {entry}\n")
             f.write(f"```\n\n")
 
             f.write(f"{item['description']}\n\n")
@@ -101,7 +103,7 @@ with open('docs/_sidebar.md', 'a', encoding='utf-8') as f_sidebar:
 
             f.write(f"---\n\n")
             
-            if os.path.exists(f'readmes/{alias}.md'):
-                with open(f'readmes/{alias}.md', encoding='utf-8') as f_readme:
+            if os.path.exists(f'readmes/{entry}.md'):
+                with open(f'readmes/{entry}.md', encoding='utf-8') as f_readme:
                     readme = f_readme.read()
                     f.write(f"{readme}\n")
