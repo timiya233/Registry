@@ -1,0 +1,16 @@
+{
+    "format_version": 1,
+    "tooth": "github.com/LymoProjects/joinMessageBuild",
+    "information": {
+        "author": "lymo",
+        "description": "每个玩家都可以自定义自己进入服务器时的全局消息提示.",
+        "homepage": "https://space.bilibili.com/34461901",
+        "license": "MIT",
+        "name": "join_message",
+        "repository": "github.com/LymoProjects/joinMessage",
+        "tags": [
+            "plugin",
+            "ll"
+        ]
+    }
+}
