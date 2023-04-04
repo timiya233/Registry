@@ -14,13 +14,13 @@ jobs:
 
       - name: Download reggen
         run: |
-          curl -L https://github.com/LiteLDev/RegistryGenerator/releases/download/v0.3.0/reggen \
+          curl -L https://github.com/LiteLDev/RegistryGenerator/releases/download/v0.4.0/reggen \
             -o reggen
           chmod +x reggen
 
       - name: Generate index
         run: |
-          ./reggen --input teeth --output docs/index.json
+          ./reggen --input entries --output docs/index.json
 
       - name: Copy assets
         run: |
