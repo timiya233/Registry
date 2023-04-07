@@ -6,7 +6,7 @@
     "description": "A typing & util lib for LLSE Python runtime | 为 LLSE Python 运行时开发的 类型提示/工具库",
     "homepage": "https://github.com/LiteLDev/llpy-helper-lib",
     "license": "MIT",
-    "name": "llpy-helper-lib",
+    "name": "LLPyHelperLib",
     "repository": "github.com/LiteLDev/llpy-helper-lib",
     "tags": [
       "plugin",
