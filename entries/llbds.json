@@ -1,5 +1,14 @@
 {
     "format_version": 1,
-    "type": "alias",
-    "target": "liteloaderbds"
+    "tooth": "github.com/Tooth-Hub/LiteLoaderBDS",
+    "information": {
+        "name": "LiteLoaderBDS (Alias)",
+        "description": "An alias of LiteLoaderBDS",
+        "author": "LiteLDev",
+        "tags": [
+            "module",
+            "ll",
+            "alias"
+        ]
+    }
 }
