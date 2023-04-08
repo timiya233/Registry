@@ -25,6 +25,7 @@ jobs:
       - name: Copy assets
         run: |
           cp -r assets/* docs/
+          cp README.md docs/
 
       - name: Generate website
         run: |

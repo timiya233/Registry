@@ -1,16 +1,14 @@
-# Official Lip Registry
+# LiteLoaderBDS Registry - Official Lip Registry for LiteLoaderBDS
 
-This is the repository for the official Lip Registry (<https://registry.litebds.com>). It contains the index of common Lip packages, e.g. `liteloaderbds`, `llanticheat`, `lip`, etc.
+This is the official Lip Registry for LiteLoaderBDS (<https://registry.litebds.com>), containing an index of common LiteLoaderBDS teeth, e.g. `liteloaderbds`, `llanticheat`, `llessentials`, etc.
 
-For Lip users, you do not need to do any configuration. Just run `lip install <alias>` and Lip will automatically fetch the package from the official registry. For example, `lip install lip` will install the latest version of Lip.
+For Lip users, you do not need to do any configuration. Just run `lip install <alias>` and Lip will automatically fetch the tooth from this registry. For example, `lip install lip` will install the latest version of Lip.
 
-For tooth creators, you can refer to [this guide](https://lip.docs.litebds.com/en/#/tutorials/submit_your_tooth_to_lip_registry) to submit your tooth to the official registry. Currently, we only accept teeth that are hosted on GitHub.
+For tooth creators, you can refer to [this guide](https://lip.docs.litebds.com/en/#/tutorials/submit_your_tooth_to_lip_registry) to submit your tooth to the official registry. Currently, we only accept LiteLoaderBDS-related teeth that are hosted on GitHub.
+
+If you are creating a tooth not related to LiteLoaderBDS, you may not submit it to this registry. However, you can still use Lip to manage your tooth without URL. The public Lip registry is still under development, and we will support this feature in the future.
 
 If you discover any problems with the registry, or if you find that some teeth are deprecated or failed to install, please [open an issue](https://github.com/LiteLDev/Registry/issues/new/choose).
-
-## Note
-
-Currently, you are only allowed to submit LLBDS related stuff in this repository.
 
 ## Disclaimer
 
