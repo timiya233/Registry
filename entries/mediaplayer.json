@@ -1,0 +1,15 @@
+{
+    "format_version": 1,
+    "tooth": "github.com/WillowSauceR/MediaPlayer-tooth",
+    "information": {
+        "name": "MediaPlayer",
+        "description": "This plugin is used to play music on the server with high performance",
+        "author": "WillowSauceR",
+        "license": "GPL-3.0",
+        "repository": "github.com/WillowSauceR/MediaPlayer",
+        "tags": [
+          "plugin",
+          "bds"
+        ]
+    }
+}
