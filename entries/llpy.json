@@ -1,5 +1,25 @@
 {
   "format_version": 1,
-  "type": "alias",
-  "target": "llpy-helper-lib"
+  "tooth": "github.com/LiteLDev/llpy-helper-lib",
+  "information": {
+    "author": "LiteLDev",
+    "description": "A typing & util lib for LLSE Python runtime | 为 LLSE Python 运行时开发的 类型提示/工具库",
+    "homepage": "https://github.com/LiteLDev/llpy-helper-lib",
+    "license": "MIT",
+    "name": "LLPyHelperLib (Alias)",
+    "repository": "github.com/LiteLDev/llpy-helper-lib",
+    "tags": [
+      "plugin",
+      "llse",
+      "alias",
+      "py",
+      "python",
+      "helper",
+      "helperlib",
+      "util",
+      "typing",
+      "dev",
+      "develop"
+    ]
+  }
 }
