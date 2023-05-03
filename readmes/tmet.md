@@ -1,0 +1,2 @@
+## TMEssential README：
+### \[[https://gitee.com/timidine/mcbe-lite-loader-script-engine-tmessential/blob/main/README.md](https://gitee.com/timidine/mcbe-lite-loader-script-engine-tmessential/blob/main/README.md)\]
